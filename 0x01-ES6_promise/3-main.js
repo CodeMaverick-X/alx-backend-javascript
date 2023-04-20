@@ -1,3 +1,5 @@
 import handleProfileSignup from "./3-all";
 
-handleProfileSignup();
+let res = handleProfileSignup();
+
+console.log(res instanceof Promise)
