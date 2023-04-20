@@ -13,4 +13,6 @@ export default function handleProfileSignup() {
     const { body } = results[1];
     console.log(body, firstName, lastName);
   });
+
+  return promise3;
 }
