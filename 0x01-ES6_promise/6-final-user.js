@@ -7,6 +7,5 @@ export default async function handleProfileSignup(firstName, lastName, fileName)
 
   const promise3 = Promise.allSettled([promise1, promise2]);
   const test = await promise3.then((results) => results);
-  console.log(test);
   return test;
 }
