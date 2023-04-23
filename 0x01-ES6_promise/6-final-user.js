@@ -8,8 +8,8 @@ export default async function handleProfileSignup(firstName, lastName, fileName)
   const promise3 = Promise.allSettled([promise1, promise2]);
   const test = await promise3.then((results) => results);
 
-  const { message } = test[1].reason;
+  const message = test[1].reason;
   delete (test[1].reason);
-  test[1].value = message;
+  test[1].value = message.toString();
   return test;
 }
