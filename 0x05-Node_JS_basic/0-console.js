@@ -1,4 +1,4 @@
 const displayMessage = function (str = '') {
-    console.log(message);
+    console.log(str);
   };
-  module.exports = displayMessage;
+module.exports = displayMessage;
