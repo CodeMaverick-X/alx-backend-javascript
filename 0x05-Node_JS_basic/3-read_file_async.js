@@ -1,4 +1,5 @@
 const fs = require('fs');
+
 function countStudents(filename) {
   return new Promise((resolve, reject) => {
     fs.readFile(filename, { encoding: 'utf-8' }, (error, rawData) => {
