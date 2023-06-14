@@ -19,7 +19,7 @@ function countStudents(filename) {
         });
         if (stats[student.field]) {
           stats[student.field].students.push(student.firstname);
-          stats[student.field].count = count + 1;
+          stats[student.field].count += 1;
         } else {
           stats[student.field] = {
             students: [student.firstname],
