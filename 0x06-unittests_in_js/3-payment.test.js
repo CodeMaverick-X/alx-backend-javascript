@@ -14,7 +14,7 @@ describe('sendPaymentRequestToApi', () => {
     utilSpy = sinon.spy(Utils, 'calculateNumber');
   });
 
-  it('should call calculateNumber function in Utils module', () => {
+  it('calls calculateNumber function in Utils module', () => {
     sendPaymentRequestToApi(100, 20);
 
     assert.equal(Utils.calculateNumber.calledOnce, true);
@@ -22,7 +22,7 @@ describe('sendPaymentRequestToApi', () => {
     utilSpy.restore();
   });
 
-  it("should display 'The total is: 120'", () => {
+  it("displays 'The total is: 120'", () => {
     sendPaymentRequestToApi(100, 20);
 
     assert(console.log.calledWith('The total is: 120'), true);
