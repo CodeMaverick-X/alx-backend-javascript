@@ -17,14 +17,14 @@ describe('sendPaymentRequestToApi', () => {
     utilSpy.restore();
   });
 
-  it('should call with 100, and 20', () => {
+  it('calls with 100, and 20', () => {
     sendPaymentRequestToApi(100, 20);
 
     assert.equal(console.log.calledWith('The total is: 120'), true);
     assert.equal(Utils.calculateNumber.calledOnce, true);
   });
 
-  it('should call with 10, and 10', () => {
+  it('calls with 10, and 10', () => {
     sendPaymentRequestToApi(10, 10);
 
     assert.equal(console.log.calledWith('The total is: 20'), true);
