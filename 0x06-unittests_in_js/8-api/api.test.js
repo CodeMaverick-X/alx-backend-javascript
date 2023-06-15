@@ -14,8 +14,8 @@ describe('Index Page', () => {
   });
 
   it('gets the index page with /', (done) => {
-    request.get(`http://localhost:7865`, (err, data) => {
-      if (err) {
+    request.get(`http://localhost:7865`, (error, data) => {
+      if (error) {
         return done(err);
       }
       expect(data.statusCode).to.equal(200);
