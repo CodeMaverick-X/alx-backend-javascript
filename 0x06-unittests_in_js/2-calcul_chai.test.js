@@ -4,11 +4,11 @@ const expect = require('chai').expect;
 describe('calculateNumber', () => {
   describe('SUM', () => {
     describe('Integer', () => {
-      it('should return 3 for 1, 2', () => {
+      it('returns 3 for 1, 2', () => {
         expect(calculateNumber('SUM', 1, 2)).to.be.equal(3);
       });
 
-      it('should return -3 for -1, -2', () => {
+      it('returns -3 for -1, -2', () => {
         expect(calculateNumber('SUM', -1, -2)).to.be.equal(-3);
       });
 
@@ -18,11 +18,11 @@ describe('calculateNumber', () => {
     });
 
     describe('Float', () => {
-      it('should return 3 for 1.0, 2.0', () => {
+      it('returns 3 for 1.0, 2.0', () => {
         expect(calculateNumber('SUM', 1.0, 2.0)).to.be.equal(3);
       });
 
-      it('should return 6 for 2.5, 2.5', () => {
+      it('returns 6 for 2.5, 2.5', () => {
         expect(calculateNumber('SUM', 2.5, 2.5)).to.be.equal(6);
       });
 
