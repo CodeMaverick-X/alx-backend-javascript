@@ -4,15 +4,15 @@ const assert = require('assert');
 describe('calculateNumber', () => {
   describe('SUM', () => {
     describe('Integer', () => {
-      it('should return 3 for 1, 2', () => {
+      it('returns 3 for 1, 2', () => {
         assert.equal(calculateNumber('SUM', 1, 2), 3);
       });
 
-      it('should return -3 for -1, -2', () => {
+      it('returns -3 for -1, -2', () => {
         assert.equal(calculateNumber('SUM', -1, -2), -3);
       });
 
-      it('should return 0 for 0, 0', () => {
+      it('returns 0 for 0, 0', () => {
         assert.equal(calculateNumber('SUM', 0, 0), 0);
       });
     });
@@ -40,7 +40,7 @@ describe('calculateNumber', () => {
         assert.equal(calculateNumber('SUM', 1.7, 3), 5);
       });
 
-      it('should return 1 for -1.7, 3', () => {
+      it('returns 1 for -1.7, 3', () => {
         assert.equal(calculateNumber('SUM', -1.7, 3), 1);
       });
 

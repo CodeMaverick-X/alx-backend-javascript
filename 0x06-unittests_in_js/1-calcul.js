@@ -7,7 +7,9 @@ const calculateNumber = (type, a, b) => {
     case 'DIVIDE':
       a = Math.round(a);
       b = Math.round(b);
-      if (b === 0) return 'Error';
+      if (b === 0) {
+        return 'Error';
+      }
       return a / b;
   }
 };
