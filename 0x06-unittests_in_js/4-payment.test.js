@@ -19,13 +19,13 @@ describe('sendPaymentRequestToApi', () => {
     calculateNumberStub.restore();
   });
 
-  it("should be called with 'SUM', 100, 20", () => {
+  it("called with 'SUM', 100, 20", () => {
     sendPaymentRequestToApi(100, 20);
 
     assert.equal(Utils.calculateNumber.calledWith('SUM', 100, 20), true);
   });
 
-  it("should display 'The total is: 10'", () => {
+  it("displays 'The total is: 10'", () => {
     sendPaymentRequestToApi(100, 20);
 
     assert.equal(console.log.calledWith('The total is: 10'), true);
