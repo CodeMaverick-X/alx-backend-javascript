@@ -2,7 +2,7 @@ const request = require('request');
 const expect = require('chai').expect;
 
 describe('Index Page', () => {
-  it('should get the index page without /', (done) => {
+  it('gets the index page without /', (done) => {
     request.get(`http://localhost:7865`, (err, data) => {
       if (err) {
         return done(err);
@@ -13,7 +13,7 @@ describe('Index Page', () => {
     });
   });
 
-  it('should get the index page with /', (done) => {
+  it('gets the index page with /', (done) => {
     request.get(`http://localhost:7865`, (err, data) => {
       if (err) {
         return done(err);

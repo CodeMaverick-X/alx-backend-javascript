@@ -3,8 +3,8 @@ const express = require('express');
 const PORT = 7865;
 const app = express();
 app.use(express.urlencoded({ extended: true }));
-app.get('/', (req, res) => {
-  res.send('Welcome to the payment system');
+app.get('/', (req, resp) => {
+  resp.send('Welcome to the payment system');
 });
 
 app.get('/cart/:id(\\d+)', (req, res) => {
